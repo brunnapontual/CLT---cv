@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Currículo - Brunna Pontual Spanudakis</title>
-    <link rel="stylesheet" href="style.css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Brunna Pontual Spanudakis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: #495057;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    iframe {
+      border: none;
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      background-color: white;
+    }
+
+    .hr-style {
+      border-top: 2px solid #dee2e6;
+      margin: 40px 0;
+    }
+  </style>
 </head>
 <body>
-    <center>
-        <h1>Brunna Pontual Spanudakis</h1>
-        <img src="img/foto fundo borrado eu.PNG"  width="200px">
-        <br>
-        <strong> Software QA Inter @ ZBRA | Undergraduate </strong>
-        <br>
-    </center>
-    <hr>
-    <center>
-        <h2>
-            <a href="components/identificacao.html" target="main">Identificação</a> |
-            <a href="components/formacao.html" target="main">Formação</a> |
-            <a href="components/experiencia.html" target="main">Experiência Profissional</a> |
-            <a href="components/habilidades.html" target="main">Habilidades Técnicas</a> |
-            <a href="components/projetos.html" target="main">Projetos e Cursos</a> |
-            <a href="components/idiomas.html" target="main">Idiomas</a>
-        </h2>
-        <iframe name="main" src="components/identificacao.html" frameborder="0" width="1200" height="800"></iframe>
-       
-    </center>
-    <hr>   
+  <div class="container text-center">
+    <h1>Brunna Pontual Spanudakis</h1>
+    <img src="img/foto fundo borrado eu.PNG" class="img-fluid rounded-circle profile-img" alt="Foto de Brunna">
+    <p class="lead mt-3"><strong>Software QA Intern @ ZBRA | Undergraduate</strong></p>
+
+    <hr class="hr-style">
+
+    <nav class="nav justify-content-center flex-wrap mb-4">
+      <a class="nav-link" href="components/identificacao.html" target="main">Identificação</a>
+      <a class="nav-link" href="components/formacao.html" target="main">Formação</a>
+      <a class="nav-link" href="components/experiencia.html" target="main">Experiência Profissional</a>
+      <a class="nav-link" href="components/habilidades.html" target="main">Habilidades Técnicas</a>
+      <a class="nav-link" href="components/projetos.html" target="main">Projetos e Cursos</a>
+      <a class="nav-link" href="components/idiomas.html" target="main">Idiomas</a>
+      <a class="nav-link" href="components/formulario.html" target="main">Contato</a>
+    </nav>
+
+    <div class="embed-responsive embed-responsive-16by9 mb-5">
+      <iframe name="main" src="components/identificacao.html" class="embed-responsive-item"></iframe>
+    </div>
+
+    <hr class="hr-style">
+  </div>
 </body>
 </html>
