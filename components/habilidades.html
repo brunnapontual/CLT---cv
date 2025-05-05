@@ -1,20 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Habilidades Técnicas</title>
-    <link rel="stylesheet" href="../style.css/main.css">
+  <meta charset="UTF-8">
+  <title>Habilidades Técnicas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    body {
+      padding: 30px;
+    }
+
+    h2 {
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .categoria {
+      font-weight: 500;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #444;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .categoria i {
+      margin-right: 10px;
+      color: #6c757d;
+    }
+
+    .habilidades-lista {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    .habilidades-lista li {
+      margin-bottom: 5px;
+      padding-left: 10px;
+    }
+
+  </style>
 </head>
 <body>
-    <center>
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-            <b>Linguagens:</b> Python, Java, Django, HTML/CSS.<br>
-            <b>Banco de dados:</b> SQL, SQLite.<br>
-            <b>Testes:</b> Teste de Sistema, Testes Automatizados, Teste Unitário, Smoke Teste, Teste E22, Selenium Webdriver, Cypress.<br>
-            <b>Gerenciamento:</b> Pacote Office, Métodos ágeis, Scrum, Trello, Jira, Azure Devops.<br>
-            <b>Design:</b> Figma, Canva, Prototipação. <br>
-            <b>Soft Skills:</b> Comunicação, Organização, Criatividade, Gestão de tempo, Proatividade, Resolução de problemas.
+  <div class="container">
+    <h2>Habilidades Técnicas</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="categoria"><i class="fas fa-code"></i>Linguagens</div>
+        <ul class="habilidades-lista">
+          <li>Python</li>
+          <li>Java</li>
+          <li>Django</li>
+          <li>HTML/CSS</li>
         </ul>
-    </center>
+
+        <div class="categoria"><i class="fas fa-database"></i>Banco de Dados</div>
+        <ul class="habilidades-lista">
+          <li>SQL</li>
+          <li>SQLite</li>
+        </ul>
+
+        <div class="categoria"><i class="fas fa-vial"></i>Testes</div>
+        <ul class="habilidades-lista">
+          <li>Teste de Sistema</li>
+          <li>Testes Automatizados</li>
+          <li>Teste Unitário</li>
+          <li>Smoke Teste</li>
+          <li>Teste E2E</li>
+          <li>Selenium WebDriver</li>
+          <li>Cypress</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <div class="categoria"><i class="fas fa-tasks"></i>Gerenciamento</div>
+        <ul class="habilidades-lista">
+          <li>Pacote Office</li>
+          <li>Métodos Ágeis</li>
+          <li>Scrum</li>
+          <li>Trello</li>
+          <li>Jira</li>
+          <li>Azure DevOps</li>
+        </ul>
+
+        <div class="categoria"><i class="fas fa-pencil-ruler"></i>Design</div>
+        <ul class="habilidades-lista">
+          <li>Figma</li>
+          <li>Canva</li>
+          <li>Prototipação</li>
+        </ul>
+
+        <div class="categoria"><i class="fas fa-user-friends"></i>Soft Skills</div>
+        <ul class="habilidades-lista">
+          <li>Comunicação</li>
+          <li>Organização</li>
+          <li>Criatividade</li>
+          <li>Gestão de tempo</li>
+          <li>Proatividade</li>
+          <li>Resolução de problemas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
