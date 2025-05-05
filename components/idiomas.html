@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Idiomas</title>
-    <link rel="stylesheet" href="../style.css/main.css">
+  <meta charset="UTF-8">
+  <title>Idiomas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    body {
+      padding: 30px;
+    }
+
+    h2 {
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .idiomas-lista {
+      list-style: none;
+      padding-left: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .idiomas-lista li {
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .idiomas-lista i {
+      margin-right: 10px;
+      color: #6c757d;
+    }
+  </style>
 </head>
 <body>
-    <center>
-        <h2>Idiomas</h2>
-        <ul>
-            <li>Inglês - Avançado</li>
-        </ul>
-    </center>
+  <div class="container">
+    <h2>Idiomas</h2>
+    <ul class="idiomas-lista">
+      <li><i class="fas fa-language"></i>Inglês – Avançado</li>
+      <li><i class="fas fa-language"></i>Espanhol – Intermediário</li>
+      <li><i class="fas fa-language"></i>Português – Nativo</li>
+    </ul>
+  </div>
 </body>
 </html>
