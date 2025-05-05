@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Contato</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    body {
+      padding: 30px 15px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .form-section {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.277);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .form-group label {
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background-color: #444;
+      border-color: #444;
+    }
+
+    .btn-primary:hover {
+      background-color: #333;
+      border-color: #333;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-section">
+    <h2>Formulário de Contato</h2>
+    <form id="contatoForm">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required placeholder="Seu nome">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" class="form-control" id="sobrenome" name="sobrenome" required placeholder="Seu sobrenome">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="telefone">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" name="telefone" required placeholder="(DDD) 00000-0000">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" name="email" required placeholder="seu@email.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required placeholder="Insira sua mensagem..."></textarea>
+        </div>
+
+        <hr>
+
+        <legend>Detalhes Técnicos</legend>
+
+        <div class="form-group">
+          <label for="lingua">Idioma:</label>
+          <select class="form-control" id="idioma" name="idioma" required>
+            <option>Inglês</option>
+            <option>Português</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="arquivo">Upload de Arquivo:</label>
+          <input type="file" class="form-control-file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx,.jpeg,.png">
+        </div>
+
+        <div class="form-group">
+          <label for="linguagens">Linguagens:</label>
+          <select multiple class="form-control" id="linguagens" name="linguagens" required>
+            <option>Python</option>
+            <option>Java</option>
+            <option>JavaScript</option>
+            <option>HTML/CSS</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Banco de dados de preferência:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="bancoDados" id="sql" value="SQL" required>
+            <label class="form-check-label" for="sql">SQL</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="bancoDados" id="nosql" value="NoSQL" required>
+            <label class="form-check-label" for="nosql">NoSQL</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="turno">Turno de preferência para reuniões:</label>
+            <select class="form-control" id="turno" name="turno" required>
+              <option>Manhã</option>
+              <option>Tarde</option>
+              <option>Noite</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="horario">Melhor horário sugerido para reuniões:</label>
+            <input type="time" class="form-control" id="horario" name="horario" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dataEntrega">Previsão de entrega desejada:</label>
+          <input type="date" class="form-control" id="dataEntrega" name="dataEntrega" required>
+        </div>
+
+        <div class="text-center">
+          <button type="reset" class="btn btn-secondary mr-2">Limpar</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Enviar mensagem
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="modal fade" id="modalConfirmacao" tabindex="-1" role="dialog" aria-labelledby="modalConfirmacaoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="modalConfirmacaoLabel">Mensagem enviada!</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Sua mensagem foi enviada. Entrarei em contato o quanto antes!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById('contatoForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      $('#modalConfirmacao').modal('show');
+      this.reset(); 
+    });
+  </script>
+</body>
+</html>
