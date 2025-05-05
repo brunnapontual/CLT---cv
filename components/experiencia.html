@@ -1,60 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Experiência Profissional</title>
-    <link rel="stylesheet" href="../style.css/main.css">
+  <meta charset="UTF-8">
+  <title>Experiência Profissional</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 30px 15px;
+    }
+
+    h2 {
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .form-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.277);
+    max-width: 900px;
+    margin: 0 auto;
+    }
+
+    .table {
+      font-size: 0.95rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .table th,
+    .table td {
+      padding: 18px 16px;
+      vertical-align: top;
+      border-color: #e9ecef;
+    }
+
+    .thead-light th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+    }
+
+    .cargo-title {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .periodo {
+      font-size: 0.875rem;
+      color: #6c757d;
+    }
+
+    .atividade-lista {
+      margin-top: 10px;
+    }
+
+    .atividade-lista li {
+      margin-bottom: 6px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+  </style>
 </head>
 <body>
-    <center>
-        <h2>Experiência Profissional</h2>
-    
-        <table>
-            <thead>
-                <tr>
-                    <th>Empresa</th>
-                    <th>Cargo</th>
-                    <th>Período</th>
-                    <th>Principais Atividades</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Zbra</td>
-                    <td>Software QA Intern</td>
-                    <td>01/2025 - Atual</td>
-                    <td>
-                        Desenvolvimento de Software;<br>
-                        Garantia de qualidade dos sistemas;<br>
-                        Garantia de satisfação do cliente;<br>
-                        Participação em reuniões;<br>
-                        Metodologias ágeis, Scrum;<br>
-                        Documentação de testes;<br>
-                        Documentação do sistema;<br>
-                        Manutenção de board e sprint, Azure Devops;<br>
-                        Desenvolvimento de manuais;<br>
-                        Design UX/UI.<br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Assembleia Legislativa do Estado de Pernambuco</td>
-                    <td>Estágio Engenharia de Software</td>
-                    <td>08/2023 - 01/2025</td>
-                    <td>
-                        <br>
-                        Treinamento em Java e SQL;<br>
-                        Desenvolvimento de sistemas internos (Java, TypeScript);<br>
-                        Participação em reuniões;<br>
-                        Apresentação sobre testes automatizados (Selenium Webdriver);<br>
-                        Uso de metodologias ágeis;<br>
-                        Documentação de testes;<br>
-                        Desenvolvimento de manuais;<br>
-                        Projeto de calendário interno web;<br>
-                        Front-end e Back-end;<br>
-                        Design UX/UI.
-                    </td>
-                </tr>
-            </tbody>
+  <div class="container">
+    <div class="form-section">
+      <h2 class="text-center">Experiência Profissional</h2>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover bg-white">
+          <thead class="thead-light">
+            <tr>
+              <th>Empresa</th>
+              <th>Cargo</th>
+              <th>Período</th>
+              <th>Principais Atividades</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>ZBRA</strong></td>
+              <td>
+                <div class="cargo-title">Software QA Intern</div>
+              </td>
+              <td>
+                <div class="periodo">Jan/2025 – Atual</div>
+              </td>
+              <td>
+                <ul class="atividade-lista">
+                  <li>Desenvolvimento de software</li>
+                  <li>Garantia de qualidade dos sistemas</li>
+                  <li>Garantia de satisfação do cliente</li>
+                  <li>Participação em reuniões</li>
+                  <li>Metodologias ágeis (Scrum)</li>
+                  <li>Documentação de testes e sistemas</li>
+                  <li>Manutenção de board e sprint (Azure DevOps)</li>
+                  <li>Desenvolvimento de manuais</li>
+                  <li>Design UX/UI</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Assembleia Legislativa de Pernambuco</strong></td>
+              <td>
+                <div class="cargo-title">Estágio Engenharia de Software</div>
+              </td>
+              <td>
+                <div class="periodo">Ago/2023 – Jan/2025</div>
+              </td>
+              <td>
+                <ul class="atividade-lista">
+                  <li>Treinamento em Java e SQL</li>
+                  <li>Desenvolvimento de sistemas internos (Java, TypeScript)</li>
+                  <li>Participação em reuniões</li>
+                  <li>Apresentação sobre testes automatizados (Selenium WebDriver)</li>
+                  <li>Uso de metodologias ágeis</li>
+                  <li>Documentação de testes</li>
+                  <li>Desenvolvimento de manuais</li>
+                  <li>Projeto de calendário interno web</li>
+                  <li>Front-end e back-end</li>
+                  <li>Design UX/UI</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
         </table>
-    </center>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
