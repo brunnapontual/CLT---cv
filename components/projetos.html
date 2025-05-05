@@ -1,29 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Projetos e Cursos</title>
-    <link rel="stylesheet" href="../style.css/main.css">
+  <meta charset="UTF-8">
+  <title>Projetos e Cursos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    body {
+      padding: 30px;
+    }
+
+    h2, h3 {
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .projetos-cursos {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    dt {
+      font-weight: 600;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    dt i {
+      margin-right: 10px;
+      color: #6c757d;
+    }
+
+    dd {
+      margin-left: 25px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #0056b3;
+    }
+
+    .conquistas-lista {
+      list-style: none;
+      padding-left: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .conquistas-lista li {
+      margin-bottom: 8px;
+      padding-left: 10px;
+    }
+  </style>
 </head>
 <body>
-    <center>
-        <h2>Projetos e Cursos</h2>
-        <dl>
-            <dt><b>Projeto Pessoal: Filma</b></dt>
-            <dd>Plataforma Social de Avaliação de Filmes | Django, HTML/CSS, Jira, Figma | <a href="https://github.com/felipesergiob/Filma">Repositório</a> | <a href="https://filma.my.canva.site/brunnapontual">Apresentação</a></dd>
-            <dt><b>Curso: Java Programming MOOC</b></dt>
-            <dd>University of Helsinki | <a href="https://github.com/brunnapontual/java-programming-mooc.fi">Exercícios</a></dd>
-            <dt><b>Curso: HTML and CSS</b></dt>
-            <dd>Origamid | Certificado</dd>
-            <dt><b>Curso: Django</b></dt>
-            <dd>Allura | Aplicado em projetos pessoais e profissionais</dd>
-        </dl>
-        <h3>Conquistas</h3>
-        <ul>
-            <li>Comunicação e Gerenciamento de Projeto</li>
-            <li>Prototipação</li>
-            <li>Testes e Manual de testes</li>
-            <li>Design UX/UI</li>
-        </ul>
-    </center>
+  <div class="container projetos-cursos">
+    <h2>Projetos e Cursos</h2>
+
+    <dl>
+      <dt><i class="fas fa-project-diagram"></i>Projeto Pessoal: Filma</dt>
+      <dd>
+        Plataforma Social de Avaliação de Filmes | Django, HTML/CSS, Jira, Figma <br>
+        <a href="https://github.com/felipesergiob/Filma" target="_blank">Repositório</a> |
+        <a href="https://filma.my.canva.site/brunnapontual" target="_blank">Apresentação</a>
+      </dd>
+
+      <dt><i class="fas fa-graduation-cap"></i>Curso: Java Programming MOOC</dt>
+      <dd>University of Helsinki |
+        <a href="https://github.com/brunnapontual/java-programming-mooc.fi" target="_blank">Exercícios</a>
+      </dd>
+
+      <dt><i class="fas fa-graduation-cap"></i>Curso: HTML and CSS</dt>
+      <dd>Origamid | Certificado</dd>
+
+      <dt><i class="fas fa-graduation-cap"></i>Curso: Django</dt>
+      <dd>Alura | Aplicado em projetos pessoais e profissionais</dd>
+    </dl>
+
+    <h3>Conquistas</h3>
+    <ul class="conquistas-lista">
+      <li>Comunicação e Gerenciamento de Projeto</li>
+      <li>Prototipação</li>
+      <li>Testes e Manual de testes</li>
+      <li>Design UX/UI</li>
+    </ul>
+  </div>
 </body>
 </html>
